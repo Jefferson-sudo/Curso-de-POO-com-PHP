@@ -19,7 +19,7 @@ class Visualizacao {
         $this->filme->setAvaliacoes(5);
     }
 
-// Gambiarra para fazer Sobrecarga do metado avaliar. PHP não tem sobre carga
+// Recurso tecnico para fazer um tipo de "Sobrecarga" do metado avaliar em PHP. PHP não tem suporte a sobrecarga
 
     public function avaliarNota($nota) {
         $this->filme->setAvaliacoes($nota);
