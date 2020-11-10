@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Abra sua conta</h2>
+    <form method="POST" action="">
+       Nome: <input type="text" name="nome">
+       CPF: <input type="text" name="cpf" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00"><br><br>
+       Email: <input type="email" name="email">
+       Telefone: <input type="text" name="telefone" class="form-control phone-ddd-mask" placeholder="Ex.: (00) 0000-0000">
+       Tipo de conta<select name="tipoconta" id="tipoconta">
+           <option value="CC">Conta Corrente</option>
+           <option value="CP">Conta Poupança</option>
+       </select>
+       <input type="submit">
+    </form>
+</body>
+</html>
