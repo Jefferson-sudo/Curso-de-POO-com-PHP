@@ -5,7 +5,7 @@ class Gafanhoto extends Pessoa{
     private $totAssistido;
     
     function __construct($nome, $idade, $sexo, $login) {
-        parent ::__construct($nome, $idade, $sexo);//Contrutor da Classe pai Pessoa
+        parent ::__construct($nome, $idade, $sexo);//Construtor da Classe pai Pessoa
         $this->login = $login;
         $this->totAssistido = 0;
     }
