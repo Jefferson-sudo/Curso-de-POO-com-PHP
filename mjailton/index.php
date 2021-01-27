@@ -10,10 +10,15 @@
                 $p = new Pessoa();
                 $p->setNome("jefferson");
                 $p->setIdade(20);
-                $p->setSalario(10000);
+                $p->setSalario(1100);
                 $p->setAltura(1.80);
+                $p->envelhecer(0);
+                $p->aumentarSalario(100);
+                $p->diminuirSalario(3);
+                $p->ganharBonus(15);
+                
                 echo"<pre>";
-                print_r($p);
+                echo $p->mostrarDados();
                 echo "</pre>";
             ?>
         </body>
