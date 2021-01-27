@@ -7,9 +7,7 @@
         <body>
             <?php 
                 require_once './classes/Pessoa.class.php';
-                $p = new Pessoa();
-                $p->setNome("jefferson");
-                $p->setIdade(20);
+                $p = new Pessoa("jefferson",20);//Para criar um objeto é obrigatorio coloca nome e idade
                 $p->setSalario(1100);
                 $p->setAltura(1.80);
                 $p->envelhecer(0);

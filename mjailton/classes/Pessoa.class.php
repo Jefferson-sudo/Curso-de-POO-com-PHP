@@ -1,22 +1,16 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * Description of Pessoa
- *
- * @author Jefferson Mateus
- */
 class Pessoa {
 
     private $nome;
     private $idade;
     private $altura;
     private $salario;
+
+    public function __construct($nome, $idade) {
+        $this->nome = $nome;
+        $this->idade = $idade;
+    }
 
     public function envelhecer($anos) {
         $this->setIdade($this->getIdade() + $anos);
@@ -33,14 +27,15 @@ class Pessoa {
     }
 
     public function ganharBonus($porcentagem) {
-        if($porcentagem) {
+        if ($porcentagem) {
             $porcentagem = ($porcentagem / 100) * $this->salario;
             $this->setSalario($this->getSalario() + $porcentagem);
         } else {
             $this->setSalario($this->getSalario());
         }
     }
-    public function mostrarDados(){
+
+    public function mostrarDados() {
         return "Objeto Pessoa <br><p>Nome:{$this->nome} <br>Idade: {$this->idade} <br>Altura: {$this->altura}<br>Salario Mensal: {$this->salario}</p>";
     }
 
@@ -74,7 +69,6 @@ class Pessoa {
 
     function setSalario($salario) {
         $this->salario = $salario;
-      
     }
 
 }
