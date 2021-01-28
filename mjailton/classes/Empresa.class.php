@@ -10,4 +10,5 @@ class Empresa {
         $this->qtdFuncionarios = 0;
     }
     
+    
 }
