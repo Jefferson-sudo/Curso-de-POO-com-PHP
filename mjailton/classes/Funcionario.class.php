@@ -13,13 +13,13 @@ class Funcionario {
      $this->saldoNaConta = $saldoNaConta;
    }
    
-   public function foitCOntratado($empresa, $cargo, $salario){
+   public function foitContratado($empresa, $cargo, $salario){
        $this->empresaTrabalha = $empresa;
        $this->cargo = $cargo;
        $this->salario = $salario;
    }
    public function receberSalario($valor){
-       $this->saldoNaConta = $valor;
+       $this->saldoNaConta += $valor;
    }
    
 }

@@ -5,19 +5,26 @@
             <title>POO PHP</title>
         </head>
         <body>
+            <pre>
             <?php 
-                require_once './classes/Pessoa.class.php';
-                $p = new Pessoa("jefferson",20);//Para criar um objeto é obrigatorio coloca nome e idade
-                $p->setSalario(1100);
-                $p->setAltura(1.80);
-                $p->envelhecer(0);
-                $p->aumentarSalario(100);
-                $p->diminuirSalario(3);
-                $p->ganharBonus(15);
+                require_once './classes/Empresa.class.php';
+                require_once './classes/Funcionario.class.php';
                 
-                echo"<pre>";
-                echo $p->mostrarDados();
-                echo "</pre>";
+                $f = new Funcionario('Luciene', 100);
+                
+                $f2 = new Funcionario('Jefferson', 500);
+                
+                
+                
+                $empresa = new Empresa('Inforltda');
+                $empresa->ContratarFuncionario($f, 'Professor de informatica', 2000);
+                $empresa->ContratarFuncionario($f2, 'Programador', 4500);
+                $empresa->pagarSalario();
+                
+            
+              var_dump($f, $f2);
+ 
             ?>
+            </pre>
         </body>
     </html>
