@@ -7,6 +7,8 @@
         <body>
             <pre>
             <?php 
+           require_once './classes/Clonar.class.php';
+            /*
                 require_once './classes/Empresa.class.php';
                 require_once './classes/Funcionario.class.php';
                 
@@ -22,8 +24,12 @@
                 $empresa->pagarSalario();
                 
             
-              var_dump($f, $f2);
- 
+              var_dump($f, $f2);*/
+            $objA = new Clonar(10)  ;
+            $objB = $objA;
+            echo "Valor inicial do objeto A é {$objA->imprimeValor()}";
+            echo "<br>Valor inicial do objeto A é {$objB->imprimeValor()}";
+
             ?>
             </pre>
         </body>
