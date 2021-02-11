@@ -4,8 +4,8 @@
             <title>POO PHP</title>
         </head>
         <body>
-
-            <?php
+<?php
+            
             require_once './classes/Clonar.class.php';
             /*
               require_once './classes/Empresa.class.php';
